@@ -1,7 +1,26 @@
 aid: rheaply
 name: Rheaply
-description: Rheaply is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Rheaply is a circular-economy platform for enterprise asset lifecycle management. It gives
+  organizations real-time inventory visibility, an internal reuse marketplace with approval
+  workflows for reallocating surplus furniture, equipment, IT assets, and lab supplies, and
+  sustainable disposition through a network of 3,400+ verified nonprofit and commercial partners.
+  Rheaply helps companies, universities, and governments cut procurement costs, divert waste from
+  landfill, track embodied-carbon savings, and run decommissioning and office move-outs. Backed by
+  Techstars, the company operates a web application at app.rheaply.com. As of this enrichment pass
+  Rheaply publishes no public developer/API program, SDKs, or OpenAPI surface.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://rheaply.com/wp-content/uploads/Homepage.png
 url: https://raw.githubusercontent.com/api-evangelist/rheaply/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Circular Economy
+- Sustainability
+- Asset Management
+- Inventory Management
+- Reuse Marketplace
+- Decommissioning
+- ESG
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +49,24 @@ maintainers:
 common:
 - type: Website
   url: https://rheaply.com/
+- type: SignUp
+  url: https://rheaply.com/register/
+- type: Login
+  url: https://app.rheaply.com/
+- type: Support
+  url: https://support.rheaply.com/en/
+- type: HelpCenter
+  url: https://support.rheaply.com/en/
+- type: Blog
+  url: https://rheaply.com/blog/
+- type: PrivacyPolicy
+  url: https://rheaply.com/privacy/
+- type: TermsOfService
+  url: https://rheaply.com/terms/
+- type: DomainSecurity
+  url: security/rheaply-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
