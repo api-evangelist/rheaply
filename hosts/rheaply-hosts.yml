@@ -1,0 +1,240 @@
+generated: '2026-10-20'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 22
+  own: 4
+  other_domain: 17
+  platform: 1
+  roles:
+  - api
+  - identity
+  - other
+  - source
+  - support
+  - website
+hosts:
+- host: api.rheaply.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: rheaply.com
+  role: api
+  relation: own
+- host: app.rheaply.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Login
+  serves: []
+  registrable_domain: rheaply.com
+  role: identity
+  relation: own
+- host: better.net
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: better.net
+  role: other
+  relation: other-domain
+- host: blogs.microsoft.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: microsoft.com
+  role: other
+  relation: other-domain
+- host: councilgreatlakesregion.org
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: councilgreatlakesregion.org
+  role: other
+  relation: other-domain
+- host: covid-19recoverycohortdemoday.splashthat.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: splashthat.com
+  role: other
+  relation: other-domain
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: issuu.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: issuu.com
+  role: other
+  relation: other-domain
+- host: resource-recycling.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: resource-recycling.com
+  role: other
+  relation: other-domain
+- host: rheaply.com
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Leadership
+  - Documentation
+  - Website
+  - SignUp
+  - Blog
+  - PrivacyPolicy
+  - TermsOfService
+  - ChangeLog
+  - Newsroom
+  serves:
+  - docs
+  - cdn
+  - hosting
+  vendor: cloudflare
+  registrable_domain: rheaply.com
+  role: website
+  relation: own
+- host: support.rheaply.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Support
+  - HelpCenter
+  serves: []
+  registrable_domain: rheaply.com
+  role: support
+  relation: own
+- host: www.bizjournals.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: bizjournals.com
+  role: other
+  relation: other-domain
+- host: www.buildinggreen.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: buildinggreen.com
+  role: other
+  relation: other-domain
+- host: www.buildings.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: buildings.com
+  role: other
+  relation: other-domain
+- host: www.businesswire.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: businesswire.com
+  role: other
+  relation: other-domain
+- host: www.chicagobusiness.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: chicagobusiness.com
+  role: other
+  relation: other-domain
+- host: www.emersoncollective.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: emersoncollective.com
+  role: other
+  relation: other-domain
+- host: www.forbes.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: forbes.com
+  role: other
+  relation: other-domain
+- host: www.inc.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: inc.com
+  role: other
+  relation: other-domain
+- host: www.morganstanley.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: morganstanley.com
+  role: other
+  relation: other-domain
+- host: www.supplychainbrain.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: supplychainbrain.com
+  role: other
+  relation: other-domain
+- host: www.wallpaper.com
+  found_by:
+  - docs-index
+  types: []
+  serves:
+  - docs
+  registrable_domain: wallpaper.com
+  role: other
+  relation: other-domain

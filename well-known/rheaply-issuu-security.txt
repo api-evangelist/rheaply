@@ -1,0 +1,5 @@
+Contact: mailto:security@issuu.com
+Encryption: 
+Policy: https://issuu.com/responsible-disclosure
+Acknowledgements: https://issuu.com/responsible-disclosure#hall-of-fame
+Permission: none

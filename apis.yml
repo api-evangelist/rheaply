@@ -1,14 +1,6 @@
 aid: rheaply
 name: Rheaply
-description: >-
-  Rheaply is a circular-economy platform for enterprise asset lifecycle management. It gives
-  organizations real-time inventory visibility, an internal reuse marketplace with approval
-  workflows for reallocating surplus furniture, equipment, IT assets, and lab supplies, and
-  sustainable disposition through a network of 3,400+ verified nonprofit and commercial partners.
-  Rheaply helps companies, universities, and governments cut procurement costs, divert waste from
-  landfill, track embodied-carbon savings, and run decommissioning and office move-outs. Backed by
-  Techstars, the company operates a web application at app.rheaply.com. As of this enrichment pass
-  Rheaply publishes no public developer/API program, SDKs, or OpenAPI surface.
+description: Rheaply is a circular-economy platform for enterprise asset lifecycle management. It gives organizations real-time inventory visibility, an internal reuse marketplace with approval workflows for reallocating surplus furniture, equipment, IT assets, and lab supplies, and sustainable disposition through a network of 3,400+ verified nonprofit and commercial partners. Rheaply helps companies, universities, and governments cut procurement costs, divert waste from landfill, track embodied-carbon savings, and run decommissioning and office move-outs. Backed by Techstars, the company operates a web application at app.rheaply.com. As of this enrichment pass Rheaply publishes no public developer/API program, SDKs, or OpenAPI surface.
 deliveryModel:
   model: saas
   open_source: false
@@ -37,11 +29,11 @@ x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - techstars
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-20 (local-v5; was portfolio-lead)
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-10-20'
 tags:
 - Company
 - Circular Economy
@@ -60,13 +52,30 @@ tags_raw:
 - Reuse Marketplace
 - Decommissioning
 - ESG
-apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: LLMsTxt
+  url: llms/rheaply-llms.txt
+- type: SecurityTxt
+  url: well-known/rheaply-support-security.txt
+- type: SecurityTxt
+  url: well-known/rheaply-issuu-security.txt
+- type: WellKnown
+  url: well-known/rheaply-well-known.yml
+- type: Hosts
+  url: hosts/rheaply-hosts.yml
+- type: Vendors
+  url: vendors/rheaply-vendors.yml
+- type: Leadership
+  url: https://rheaply.com/about-us/leadership/
+- type: Documentation
+  url: https://rheaply.com/resources/guides/adaptive-reuse/
+- type: GitHubOrganization
+  url: https://github.com/Rheaply
 - type: Website
   url: https://rheaply.com/
 - type: SignUp
@@ -80,13 +89,30 @@ common:
 - type: Blog
   url: https://rheaply.com/blog/
 - type: PrivacyPolicy
-  url: https://rheaply.com/privacy/
+  url: https://rheaply.com/terms/privacy-statement/
 - type: TermsOfService
   url: https://rheaply.com/terms/
+- type: ChangeLog
+  url: https://rheaply.com/release-notes/
+- type: Newsroom
+  url: https://rheaply.com/press/
 - type: DomainSecurity
   url: security/rheaply-domain-security.yml
+apis: []
 x-enrichment:
-  date: '2026-07-21'
+  date: '2026-10-20'
   status: minimal
-  artifacts_added: 1
-  pass: local-v1
+  artifacts_added: 5
+  pass: local-v5
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: api.rheaply.com only 302-redirects every path (including /openapi.json and /graphql) to the app.rheaply.com web app, and neither the site, its llms.txt nor the support center documents any public API, SDK or MCP server.
+  evidence:
+  - url: https://api.rheaply.com/openapi.json
+    status: 302
+  - url: https://rheaply.com/llms.txt
+    status: 200
+  - url: https://support.rheaply.com/mcp
+    status: 403
+  checked: '2026-10-20'
